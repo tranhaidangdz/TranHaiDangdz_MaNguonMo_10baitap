@@ -1,6 +1,6 @@
 -- Tạo database và bảng users
-CREATE DATABASE IF NOT EXISTS tranhaidang_manguonmo;
-USE tranhaidang_manguonmo;
+CREATE DATABASE IF NOT EXISTS tranhaidang_manguonmo_10baitap;
+USE tranhaidang_manguonmo_10baitap;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Thêm user mẫu (password: 123456)
 INSERT INTO users (username, email, password) VALUES 
-('admin', 'admin@example.com', '123456');
+('admin123', 'onlinekhoahoc750@gmail.com', '123456');

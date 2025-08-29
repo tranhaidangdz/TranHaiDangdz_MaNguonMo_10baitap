@@ -3,7 +3,7 @@
 class Database
 {
     private $host = 'localhost';
-    private $db_name = 'tranhaidang_manguonmo';
+    private $db_name = 'tranhaidang_manguonmo_10baitap';
     private $username = 'root';
     private $password = '';
     public $conn;

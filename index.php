@@ -21,7 +21,7 @@ if (isset($_GET['logout'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Clone - Dashboard</title>
+    <title>Index - TranHaiDang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -323,7 +323,7 @@ if (isset($_GET['logout'])) {
         <div class="header-left">
             <div class="logo">
                 <i class="fab fa-github"></i>
-                GitHub Clone
+                TranHaiDang
             </div>
             <div class="search-bar">
                 <i class="fas fa-search"></i>
@@ -359,18 +359,60 @@ if (isset($_GET['logout'])) {
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title">Repositories</div>
+                <div class="sidebar-title">Bài tập</div>
                 <a href="#" class="sidebar-item">
                     <i class="fas fa-code-branch"></i>
-                    Tất cả repositories
+                    Tất cả bài tập
                 </a>
-                <a href="#" class="sidebar-item">
-                    <i class="fas fa-star"></i>
-                    Repositories đã star
-                </a>
+
                 <a href="#" class="sidebar-item">
                     <i class="fas fa-plus"></i>
-                    Tạo repository mới
+                    Bài 1
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 2
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 3
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 4
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 5
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 6
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 7
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 8
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 9
+                </a>
+
+                <a href="#" class="sidebar-item">
+                    <i class="fas fa-plus"></i>
+                    Bài 10
                 </a>
             </div>
 
@@ -407,16 +449,16 @@ if (isset($_GET['logout'])) {
         <div class="content">
             <div class="welcome-section">
                 <h1>Chào mừng, <?php echo $_SESSION['username']; ?>!</h1>
-                <p>Chào mừng bạn đến với GitHub Clone - nơi học lập trình web hiệu quả</p>
+                <p>Chào mừng bạn đến với web TranHaiDang - nơi học lập trình web hiệu quả</p>
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-header">
                             <div class="stat-icon">
                                 <i class="fas fa-code"></i>
                             </div>
-                            <div class="stat-title">Total Repositories</div>
+                            <div class="stat-title">Họ tên</div>
                         </div>
-                        <div class="stat-number">12</div>
+                        <div class="stat-number">Trần Hải Đăng</div>
                     </div>
 
                     <div class="stat-card">
@@ -424,9 +466,9 @@ if (isset($_GET['logout'])) {
                             <div class="stat-icon">
                                 <i class="fas fa-star"></i>
                             </div>
-                            <div class="stat-title">Stars Received</div>
+                            <div class="stat-title">Khoa</div>
                         </div>
-                        <div class="stat-number">48</div>
+                        <div class="stat-number">Công nghệ thông tin</div>
                     </div>
 
                     <div class="stat-card">
@@ -434,9 +476,9 @@ if (isset($_GET['logout'])) {
                             <div class="stat-icon">
                                 <i class="fas fa-users"></i>
                             </div>
-                            <div class="stat-title">Followers</div>
+                            <div class="stat-title">Lớp</div>
                         </div>
-                        <div class="stat-number">23</div>
+                        <div class="stat-number">CNTT3</div>
                     </div>
 
                     <div class="stat-card">
@@ -444,9 +486,9 @@ if (isset($_GET['logout'])) {
                             <div class="stat-icon">
                                 <i class="fas fa-code-branch"></i>
                             </div>
-                            <div class="stat-title">Contributions</div>
+                            <div class="stat-title">Khóa</div>
                         </div>
-                        <div class="stat-number">156</div>
+                        <div class="stat-number">K63</div>
                     </div>
                 </div>
             </div>
