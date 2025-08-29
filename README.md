@@ -29,7 +29,7 @@ TranHaiDangdz_MaNguonMo_10baitap/
 ### Bước 3: Tạo database
 1. Mở phpMyAdmin: http://localhost/phpmyadmin
 2. Chạy script SQL từ file `database.sql`
-3. Hoặc tạo database `github_clone` và import file SQL
+3. Hoặc tạo database `TranHaiDangdz_MaNguonMo_10baitap` và import file SQL
 
 ### Bước 4: Cấu hình
 1. Mở file `config/database.php`
