@@ -14,7 +14,7 @@
 ### Bước 2: Tạo project
 1. Tạo thư mục `github_clone` trong `xampp/htdocs/`
 2. Copy tất cả files vào thư mục này:
-TranHaiDangdz_MaNguonMo_10baitap/
+- TranHaiDangdz_MaNguonMo_10baitap/
 ├── config/
 │   └── database.php
 ├── includes/
@@ -95,5 +95,5 @@ private $password = ''; // Thay đổi nếu có password
 - Thêm/bớt sidebar items
 - Customize dashboard statistics
 - Thêm dark/light theme toggle
-@author: tranhaidangdz
-email: trandang211@gmail.com
+- @author: tranhaidangdz
+- email: trandang211@gmail.com
