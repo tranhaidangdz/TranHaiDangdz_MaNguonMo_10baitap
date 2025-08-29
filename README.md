@@ -15,15 +15,16 @@
 1. Tạo thư mục `github_clone` trong `xampp/htdocs/`
 2. Copy tất cả files vào thư mục này:
 - TranHaiDangdz_MaNguonMo_10baitap/
--├── config/
--│   └── database.php
--├── includes/
--│   └── auth.php
--├── index.php
--├── login.php
--├── register.php
--├── logout.php
--└── .htaccess
+TranHaiDangdz_MaNguonMo_10baitap/
+├── config/
+│   └── database.php
+├── includes/
+│   └── auth.php
+├── index.php
+├── login.php
+├── register.php
+├── logout.php
+└── .htaccess
 
 ### Bước 3: Tạo database
 1. Mở phpMyAdmin: http://localhost/phpmyadmin
