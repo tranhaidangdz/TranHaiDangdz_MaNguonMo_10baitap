@@ -168,7 +168,17 @@ if (isset($_GET['logout'])) {
         /* Content */
         .content {
             flex: 1;
+            /* Chiếm toàn bộ phần còn lại sau sidebar */
             padding: 24px;
+            display: flex;
+            flex-direction: column;
+            /* sắp xếp dọc */
+            gap: 24px;
+            /* khoảng cách giữa các section */
+            overflow-y: auto;
+            /* nếu nội dung dài sẽ scroll */
+            background: #0d1117;
+            /* đồng bộ màu nền */
         }
 
         .welcome-section {
@@ -249,15 +259,6 @@ if (isset($_GET['logout'])) {
             padding: 20px;
         }
 
-        .section-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #f0f6fc;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
 
         .activity-item {
             display: flex;
@@ -510,126 +511,9 @@ if (isset($_GET['logout'])) {
                         </div>
                     </div>
 
-                    <div class="activity-item">
-                        <div class="activity-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-title">Push code to php-tutorial</div>
-                            <div class="activity-time">5 giờ trước</div>
-                        </div>
-                    </div>
 
-                    <div class="activity-item">
-                        <div class="activity-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-title">Star repository: awesome-php</div>
-                            <div class="activity-time">1 ngày trước</div>
-                        </div>
-                    </div>
-
-                    <div class="activity-item">
-                        <div class="activity-icon">
-                            <i class="fas fa-comment"></i>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-title">Commented on issue #15</div>
-                            <div class="activity-time">2 ngày trước</div>
-                        </div>
-                    </div>
-
-                    <div class="activity-item">
-                        <div class="activity-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-title">Merged pull request #8</div>
-                            <div class="activity-time">3 ngày trước</div>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="repositories-section">
-                    <div class="section-title">
-                        <i class="fas fa-folder"></i>
-                        Repositories của bạn
-                    </div>
-
-                    <div class="repo-list">
-                        <div class="repo-item">
-                            <div class="repo-header">
-                                <div class="repo-name">
-                                    <i class="fas fa-book"></i>
-                                    <a href="#">web-learning</a>
-                                </div>
-                                <div class="repo-visibility">Public</div>
-                            </div>
-                            <div class="repo-description">Tài liệu học lập trình web từ cơ bản đến nâng cao</div>
-                            <div class="repo-meta">
-                                <span class="language php">PHP</span>
-                                <span class="stars"><i class="fas fa-star"></i> 8</span>
-                                <span class="updated">Cập nhật 2 giờ trước</span>
-                            </div>
-                        </div>
-
-                        <div class="repo-item">
-                            <div class="repo-header">
-                                <div class="repo-name">
-                                    <i class="fas fa-book"></i>
-                                    <a href="#">php-tutorial</a>
-                                </div>
-                                <div class="repo-visibility">Public</div>
-                            </div>
-                            <div class="repo-description">Hướng dẫn PHP từ A-Z cho người mới bắt đầu</div>
-                            <div class="repo-meta">
-                                <span class="language php">PHP</span>
-                                <span class="stars"><i class="fas fa-star"></i> 15</span>
-                                <span class="updated">Cập nhật 1 ngày trước</span>
-                            </div>
-                        </div>
-
-                        <div class="repo-item">
-                            <div class="repo-header">
-                                <div class="repo-name">
-                                    <i class="fas fa-book"></i>
-                                    <a href="#">html-css-basics</a>
-                                </div>
-                                <div class="repo-visibility">Public</div>
-                            </div>
-                            <div class="repo-description">Kiến thức cơ bản về HTML và CSS</div>
-                            <div class="repo-meta">
-                                <span class="language html">HTML</span>
-                                <span class="stars"><i class="fas fa-star"></i> 12</span>
-                                <span class="updated">Cập nhật 2 ngày trước</span>
-                            </div>
-                        </div>
-
-                        <div class="repo-item">
-                            <div class="repo-header">
-                                <div class="repo-name">
-                                    <i class="fas fa-book"></i>
-                                    <a href="#">javascript-advanced</a>
-                                </div>
-                                <div class="repo-visibility">Private</div>
-                            </div>
-                            <div class="repo-description">Các kỹ thuật JavaScript nâng cao và ES6+</div>
-                            <div class="repo-meta">
-                                <span class="language javascript">JavaScript</span>
-                                <span class="stars"><i class="fas fa-star"></i> 5</span>
-                                <span class="updated">Cập nhật 1 tuần trước</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="show-more">
-                        <a href="#" class="show-more-btn">
-                            <i class="fas fa-arrow-right"></i>
-                            Xem tất cả repositories
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -637,140 +521,14 @@ if (isset($_GET['logout'])) {
     <style>
         .content-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* tự động dàn cột, mỗi cột tối thiểu 300px */
             gap: 24px;
-        }
 
-        .repositories-section {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 20px;
-        }
-
-        .repo-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .repo-item {
-            padding: 16px;
-            background: #0d1117;
-            border: 1px solid #21262d;
-            border-radius: 8px;
-            transition: border-color 0.2s;
-        }
-
-        .repo-item:hover {
-            border-color: #30363d;
-        }
-
-        .repo-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        .repo-name {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
-        }
-
-        .repo-name a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .repo-name a:hover {
-            text-decoration: underline;
-        }
-
-        .repo-visibility {
-            padding: 2px 8px;
-            background: #21262d;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            font-size: 12px;
-            color: #7d8590;
-        }
-
-        .repo-description {
-            color: #7d8590;
-            font-size: 14px;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-
-        .repo-meta {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            font-size: 12px;
-        }
-
-        .language {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .language::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .language.php::before {
-            background: #777bb4;
-        }
-
-        .language.html::before {
-            background: #e34f26;
-        }
-
-        .language.javascript::before {
-            background: #f7df1e;
-        }
-
-        .stars {
-            color: #7d8590;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .updated {
-            color: #7d8590;
-        }
-
-        .show-more {
-            margin-top: 16px;
-            text-align: center;
-        }
-
-        .show-more-btn {
-            color: #58a6ff;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            font-size: 14px;
-            transition: background-color 0.2s;
-        }
-
-        .show-more-btn:hover {
-            background: #21262d;
-            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            /* không ép full chiều cao */
+            box-sizing: border-box;
         }
 
         @media (max-width: 768px) {
@@ -782,8 +540,14 @@ if (isset($_GET['logout'])) {
                 width: 100%;
             }
 
+            .content {
+                padding: 16px;
+            }
+
             .content-grid {
                 grid-template-columns: 1fr;
+                /* mobile -> 1 cột */
+                gap: 16px;
             }
 
             .search-bar {
