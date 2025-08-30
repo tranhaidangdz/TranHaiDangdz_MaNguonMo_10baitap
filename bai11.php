@@ -5,105 +5,105 @@
     <meta charset="UTF-8">
     <title>Login & Signup - GitHub Style</title>
     <style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-        background-color: #f6f8fa;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        min-height: 100vh;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
 
-    .container {
-        margin-top: 40px;
-        background: #fff;
-        padding: 30px;
-        border: 1px solid #d0d7de;
-        border-radius: 6px;
-        box-shadow: 0 1px 3px rgba(27, 31, 35, 0.1);
-        width: 800px;
-    }
+        .container {
+            margin-top: 40px;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(27, 31, 35, 0.1);
+            width: 800px;
+        }
 
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        color: #24292f;
-    }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #24292f;
+        }
 
-    .top-bar {
-        background-color: #f6f8fa;
-        border: 1px solid #d0d7de;
-        padding: 10px;
-        text-align: center;
-        margin-bottom: 20px;
-        border-radius: 6px;
-    }
+        .top-bar {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
 
-    .btn-facebook {
-        display: inline-block;
-        background-color: #1877f2;
-        color: #fff;
-        padding: 8px 16px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-    }
+        .btn-facebook {
+            display: inline-block;
+            background-color: #1877f2;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-    .form-wrapper {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
+        .form-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
 
-    .form-box {
-        flex: 1;
-    }
+        .form-box {
+            flex: 1;
+        }
 
-    label {
-        display: block;
-        font-size: 14px;
-        margin-bottom: 6px;
-        color: #24292f;
-    }
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #24292f;
+        }
 
-    input,
-    select {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #d0d7de;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
 
-    input[type="checkbox"] {
-        width: auto;
-        margin-right: 5px;
-    }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
 
-    .btn {
-        background-color: #2da44e;
-        border: 1px solid rgba(27, 31, 35, .15);
-        border-radius: 6px;
-        color: #fff;
-        font-weight: 600;
-        padding: 6px 12px;
-        cursor: pointer;
-    }
+        .btn {
+            background-color: #2da44e;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 600;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
 
-    .btn:disabled {
-        background-color: #94d3a2;
-        cursor: not-allowed;
-    }
+        .btn:disabled {
+            background-color: #94d3a2;
+            cursor: not-allowed;
+        }
 
-    .section-title {
-        font-weight: 600;
-        margin: 10px 0;
-        color: #24292f;
-    }
+        .section-title {
+            font-weight: 600;
+            margin: 10px 0;
+            color: #24292f;
+        }
     </style>
 </head>
 
