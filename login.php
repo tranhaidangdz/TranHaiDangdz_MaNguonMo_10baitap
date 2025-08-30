@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập - TranHaiDang</title>
+    <title>Đăng nhập - TranHaiDang221230799</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="login-container">
         <div class="logo">
             <i class="fab fa-github"></i>
-            <h1>TRANHAIDANG-221230799</h1>
+            <h1>Đăng nhập</h1>
         </div>
 
         <?php if ($error): ?>

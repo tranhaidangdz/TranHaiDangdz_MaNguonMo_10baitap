@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký - TranHaiDang</title>
+    <title>Đăng ký - TranHaiDang221230799</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -169,7 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="register-container">
         <div class="logo">
             <i class="fab fa-github"></i>
-            <h1>GitHub Clone</h1>
+            <h1>Đăng ký</h1>
         </div>
 
         <?php if ($error): ?>
